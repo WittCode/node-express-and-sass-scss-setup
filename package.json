@@ -1,0 +1,22 @@
+{
+  "name": "express-and-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch": "sass --no-source-map --watch styles/main.scss public/css/main.css",
+    "nodemon-watch": "nodemon index.js -e *",
+    "dev": "npm-run-all --parallel sass-watch nodemon-watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "sass": "^1.49.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5"
+  }
+}
